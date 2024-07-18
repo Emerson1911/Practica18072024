@@ -1,12 +1,13 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     padding: 20px;
 }
 
-h1 {
-    text-align: center;
-}
+/* h1 {
+    
+} */
 
 .search-container {
     margin-bottom: 20px;
@@ -50,7 +51,7 @@ table, th, td {
 }
 
 th, td {
-    padding: 10px; /* Ajustar el padding para hacerla más compacta */
+    padding: 10px;
     text-align: left;
 }
 
@@ -63,14 +64,79 @@ th {
     text-align: center;
 }
 
-.butons{
-    text-align: justify;
+.butons {
     color: black;
     background-color: green;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.elna{
-    text-align: justify;
+.elna {
     color: black;
     background-color: red;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
+/* Estilos específicos para el modal */
+modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 600px; /* Para limitar el tamaño máximo del modal */
+    background-color: #fff;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 20px;
+}
+
+modal table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+div {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+}
+
+h1 {
+    flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+/* Estilo para el círculo junto al nombre */
+.circle1 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px; /* Espacio entre el nombre y el círculo */
+    border: 2px solid #007bff; /* Color del borde del círculo */
+}
+.circle2 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px; /* Espacio entre el nombre y el círculo */
+    border: 2px solid red; /* Color del borde del círculo */
+}
+.circle3 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px; /* Espacio entre el nombre y el círculo */
+    border: 2px solid #007bff; /* Color del borde del círculo */
+}
+
+/* Ajustes adicionales según necesites */

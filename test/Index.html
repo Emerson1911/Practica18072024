@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ejemplo de Tabla con HTML y CSS</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Tabla con HTML y CSS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<h1>Crear Cliente</h1>
-<div class="search-container">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" placeholder="Buscar por nombre...">
-    <label for="apellido">Apellido:</label>
-    <input type="text" id="apellido" placeholder="Buscar por apellido...">
-</div>
 
-<table>
-    <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Categoría</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Juan</td>
-            <td>Pérez</td>
-            <td rowspan="2">Desarrollador</td>
-            <td class="acciones">
-                <button class="butons">Editar</button>
-                <button class="elna">Eliminar</button>
-            </td>
-        </tr>
-        <tr>
-            <td>Maria</td>
-            <td>Gómez</td>
-            <td class="acciones">
-                <button class="butons">Editar</button>
-                <button class="elna">Eliminar</button>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<script src="script.js"></script>
+    <modal class="div">
+        <div>
+            <h1 class="clien">Crear Cliente</h1>
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="circle3"></span>
+        </div>  
+        <hr >
+        <div class="search-container">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Buscar por nombre...">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" placeholder="Buscar por apellido...">
+            <button id="buscar">Buscar</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Categoría</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan</td>
+                    <td>Pérez</td>
+                    <td rowspan="2">Desarrollador</td>
+                    <td class="acciones">
+                        <button class="butons">E</button>
+                        <button class="elna">D</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>Gómez</td>
+                    <td class="acciones">
+                        <button class="butons">E</button>
+                        <button class="elna">D</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </modal>
+    <script src="script.js" defer></script>
 </body>
+
 </html>
